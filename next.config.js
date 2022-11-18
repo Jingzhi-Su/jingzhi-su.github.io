@@ -3,6 +3,8 @@ const glob = require('glob')
 
 module.exports = {
   webpack: (config, { dev }) => {
+    basePath: "/jingzhi-su.github.io"
+    assetPrefix: "/jingzhi-su.github.io"
     config.module.rules.push(
       {
         test: /\.(css|scss)/,
